@@ -1,0 +1,56 @@
+/* ESTILOS GENERALES */
+body {
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+
+/* BENEFICIOS - FLEXBOX */
+.beneficios-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.beneficio-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-8px);
+}
+
+/* PROGRAMAS - GRID */
+.programas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* MEJORAS */
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    margin-top: 40px;
+}
